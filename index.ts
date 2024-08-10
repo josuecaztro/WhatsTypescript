@@ -2,7 +2,7 @@
 import './style.css';
 
 
-const form: HTMLFormElement = document.querySelector('#defineform');
+/*const form: HTMLFormElement = document.querySelector('#defineform');
 
 
 form.onsubmit = () => {
@@ -13,3 +13,4 @@ form.onsubmit = () => {
   console.log(text);
   return false; // prevent reload
 };
+*/
