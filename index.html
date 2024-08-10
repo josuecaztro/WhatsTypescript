@@ -36,6 +36,11 @@
           font-size: 3.5rem;
         }
       }
+
+      .toggle-me {
+        display: none;
+      }
+     
     </style>
 
     
@@ -76,8 +81,8 @@
         <li>This is a list. Your word could go here.</li>
         <li>It appears completely unstyled.</li>
       -->
-        <li>Definitions:</li>
-        <li id="multiple-defs">Maybe your multiple definitions of the word are here?</li>
+        <li class="toggle-me">Definitions:</li>
+        <li class="toggle-me" id="multiple-defs">Maybe your multiple definitions of the word are here?</li>
          <!--
         <li>Structurally, it's still a list.</li>
         <li>However, this style only applies to immediate child elements.</li>
@@ -91,12 +96,12 @@
           </ul>
         </li>
         -->
-        <li>Synonyms:
+        <li class="toggle-me">Synonyms:
           <ul id="synonyms-list">
             <li></li>
           </ul>
         </li>
-        <li>Antonyms:
+        <li class="toggle-me">Antonyms:
           <ul id="antonyms-list">
             <li></li>
           </ul>

@@ -1,5 +1,5 @@
 // Import stylesheets
-import './style.css';
+//import './style.css';
 
 export interface Root2 {
   word: string
@@ -45,6 +45,10 @@ export interface License2 {
 
 document.getElementById("testButton")?.addEventListener("click", () => {
   console.log("clicked");
+  const toggleClass:any = document.getElementsByClassName("toggle-me");
+  for (let i = 0; i < toggleClass.length; i++) {
+    toggleClass[i].style.display = "block";
+  }
 
   const inputElement = document.getElementById("userInputSearch") as HTMLInputElement;
   const myWord = inputElement.value.trim();

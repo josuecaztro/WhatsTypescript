@@ -1,10 +1,14 @@
 "use strict";
+// Import stylesheets
+//import './style.css';
 var _a;
 Object.defineProperty(exports, "__esModule", { value: true });
-// Import stylesheets
-//require("./style.css");
 (_a = document.getElementById("testButton")) === null || _a === void 0 ? void 0 : _a.addEventListener("click", function () {
     console.log("clicked");
+    var toggleClass = document.getElementsByClassName("toggle-me");
+    for (var i = 0; i < toggleClass.length; i++) {
+        toggleClass[i].style.display = "block";
+    }
     var inputElement = document.getElementById("userInputSearch");
     var myWord = inputElement.value.trim();
     if (myWord) {
